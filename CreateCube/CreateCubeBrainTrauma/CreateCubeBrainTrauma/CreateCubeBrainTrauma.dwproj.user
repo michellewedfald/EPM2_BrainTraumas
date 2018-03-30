@@ -3,7 +3,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>localhost</TargetServer>
+        <TargetServer>TEW_SQLEXPRESS:2382</TargetServer>
         <TargetDatabase>CreateCubeBrainTrauma</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>
