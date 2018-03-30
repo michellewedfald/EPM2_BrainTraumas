@@ -1,0 +1,225 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0650b57c-20b1-4d91-ba34-c935d34f3826" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Brain Traumas DW</ID>
+  <Name>Brain Traumas DW DSV</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Brain Traumas DW</DataSourceID>
+  <Schema>
+    <xs:schema id="Brain_x0020_Traumas_x0020_DW" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Brain_x0020_Traumas_x0020_DW" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="d6801957-ba94-4101-b635-8a8ed8c451f1">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_FactPatientMeasurement" msprop:design-time-name="37409b4b-dd4c-42df-b0cc-472f3dd51f2d" msprop:FriendlyName="FactPatientMeasurement" msprop:DbSchemaName="dbo" msprop:DbTableName="FactPatientMeasurement" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MeasurementID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="bba940a4-721a-4ee1-a93e-1a0f4d45e38a" msprop:DbColumnName="MeasurementID" msprop:FriendlyName="MeasurementID" type="xs:long" />
+                  <xs:element name="MeasurementDate" msprop:design-time-name="7a9199f0-1341-409f-ad26-af33618645e8" msprop:DbColumnName="MeasurementDate" msprop:FriendlyName="MeasurementDate" type="xs:int" minOccurs="0" />
+                  <xs:element name="MeasurementTime" msprop:design-time-name="3539e793-c4c9-4d01-8bad-b92a2874031e" msprop:DbColumnName="MeasurementTime" msprop:FriendlyName="MeasurementTime" type="xs:int" minOccurs="0" />
+                  <xs:element name="Patient" msprop:design-time-name="9812af0f-873d-47c1-8d78-e88c333ffd7b" msprop:DbColumnName="Patient" msprop:FriendlyName="Patient" type="xs:int" minOccurs="0" />
+                  <xs:element name="RawMeasurementECG" msprop:design-time-name="0e169f48-8f57-457e-a385-bc4c8c16a707" msprop:DbColumnName="RawMeasurementECG" msprop:FriendlyName="RawMeasurementECG" type="xs:int" minOccurs="0" />
+                  <xs:element name="RawMeasurementICP" msprop:design-time-name="554e22d7-49dd-4fa7-b34c-92a7cc57d406" msprop:DbColumnName="RawMeasurementICP" msprop:FriendlyName="RawMeasurementICP" type="xs:int" minOccurs="0" />
+                  <xs:element name="RawMeasurementABP" msprop:design-time-name="e3cbed82-b496-4ef4-b98a-9ff151b4df2b" msprop:DbColumnName="RawMeasurementABP" msprop:FriendlyName="RawMeasurementABP" type="xs:int" minOccurs="0" />
+                  <xs:element name="TotalAmountOfMeasurements" msprop:design-time-name="7c0f3bcc-9aba-4ead-b4ab-fa43dffc5888" msprop:DbColumnName="TotalAmountOfMeasurements" msprop:FriendlyName="TotalAmountOfMeasurements" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimTraumaPatient" msprop:design-time-name="9b7dee94-01bf-4fd1-8771-9687efc68371" msprop:FriendlyName="DimTraumaPatient" msprop:DbSchemaName="dbo" msprop:DbTableName="DimTraumaPatient" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="PatientID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="a3992988-130c-447f-a3c5-b13a6f0ad82a" msprop:DbColumnName="PatientID" msprop:FriendlyName="PatientID" type="xs:int" />
+                  <xs:element name="PatientName" msprop:design-time-name="8597d77b-e059-448c-8cfc-52902aa4485e" msprop:DbColumnName="PatientName" msprop:FriendlyName="PatientName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Gender" msprop:design-time-name="c531a1cd-56db-45ed-8ab9-bd638aae199f" msprop:DbColumnName="Gender" msprop:FriendlyName="Gender">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="6" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimTraumaDate" msprop:design-time-name="678b56e5-e9a5-42d9-bae0-41f10e17abd6" msprop:FriendlyName="DimTraumaDate" msprop:DbSchemaName="dbo" msprop:DbTableName="DimTraumaDate" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DateKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="750914e1-d440-41a9-b2d8-c00a596ed8b5" msprop:DbColumnName="DateKey" msprop:FriendlyName="DateKey" type="xs:int" />
+                  <xs:element name="DayTrauma" msprop:design-time-name="8ba97f25-311b-4f8c-acd3-d51401926648" msprop:DbColumnName="DayTrauma" msprop:FriendlyName="DayTrauma">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MonthTrauma" msprop:design-time-name="f68afb21-32a2-472d-bb3e-bd4aee92f5ea" msprop:DbColumnName="MonthTrauma" msprop:FriendlyName="MonthTrauma">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="YearTrauma" msprop:design-time-name="dcb3a1c5-314b-49a0-8e06-2cdf0bf1ebd9" msprop:DbColumnName="YearTrauma" msprop:FriendlyName="YearTrauma">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimECGRaw" msprop:design-time-name="3b622794-2fcc-42bf-aea9-91c1796003c7" msprop:FriendlyName="DimECGRaw" msprop:DbSchemaName="dbo" msprop:DbTableName="DimECGRaw" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="RawECG_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="6b42cbb6-97e6-491b-b96f-fed7bf0eb719" msprop:DbColumnName="RawECG_ID" msprop:FriendlyName="RawECG_ID" type="xs:int" />
+                  <xs:element name="ECGChannel_1" msprop:design-time-name="ec3c4483-85a6-46f1-8d6c-2562e9d35c56" msprop:DbColumnName="ECGChannel_1" msprop:FriendlyName="ECGChannel_1" type="xs:int" />
+                  <xs:element name="ECGChannel_2" msprop:design-time-name="a1488889-dd3c-4b92-8926-326dc6da9db8" msprop:DbColumnName="ECGChannel_2" msprop:FriendlyName="ECGChannel_2" type="xs:int" />
+                  <xs:element name="ECGChannel_3" msprop:design-time-name="9a631f67-5818-4b5a-be93-801c2eba0145" msprop:DbColumnName="ECGChannel_3" msprop:FriendlyName="ECGChannel_3" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimTraumaTime" msprop:design-time-name="04134080-debb-42c6-a5ae-9d693d5e0358" msprop:FriendlyName="DimTraumaTime" msprop:DbSchemaName="dbo" msprop:DbTableName="DimTraumaTime" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="TimeKey" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8850fa0f-4644-4315-b68f-bc8570c10353" msprop:DbColumnName="TimeKey" msprop:FriendlyName="TimeKey" type="xs:int" />
+                  <xs:element name="HourTrauma" msprop:design-time-name="f4aac69f-eb0d-4d7f-a38a-dbb82a3b83f2" msprop:DbColumnName="HourTrauma" msprop:FriendlyName="HourTrauma" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="MinuteTrauma" msprop:design-time-name="f0be8ed1-0888-42cf-8d95-56151ab76bea" msprop:DbColumnName="MinuteTrauma" msprop:FriendlyName="MinuteTrauma" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SecondTrauma" msprop:design-time-name="de83713c-1c58-4413-8b60-03e3fa773289" msprop:DbColumnName="SecondTrauma" msprop:FriendlyName="SecondTrauma" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimICPRaw" msprop:design-time-name="77c530eb-3adb-4464-af38-1f60b4567e8f" msprop:FriendlyName="DimICPRaw" msprop:DbSchemaName="dbo" msprop:DbTableName="DimICPRaw" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="RawICP_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8a18335b-257b-463b-8543-eaf1c9460b24" msprop:DbColumnName="RawICP_ID" msprop:FriendlyName="RawICP_ID" type="xs:int" />
+                  <xs:element name="IntraCranialPressure" msprop:design-time-name="58ed7408-5cc9-421b-bc8c-1be780330f8c" msprop:DbColumnName="IntraCranialPressure" msprop:FriendlyName="IntraCranialPressure" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DimABPRaw" msprop:design-time-name="00915346-93b0-4543-bda9-e00988271c1e" msprop:FriendlyName="DimABPRaw" msprop:DbSchemaName="dbo" msprop:DbTableName="DimABPRaw" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="RawABP_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="1fae7111-5135-4fcc-94c1-24b5a3eb041d" msprop:DbColumnName="RawABP_ID" msprop:FriendlyName="RawABP_ID" type="xs:int" />
+                  <xs:element name="Systolic" msprop:design-time-name="ac3cf632-c0d5-4d72-8272-74571b7f5f58" msprop:DbColumnName="Systolic" msprop:FriendlyName="Systolic" type="xs:int" />
+                  <xs:element name="Diastolic" msprop:design-time-name="f4147ddf-3e0a-4862-9112-8392b3b84dcd" msprop:DbColumnName="Diastolic" msprop:FriendlyName="Diastolic" type="xs:int" />
+                  <xs:element name="Mean" msprop:design-time-name="7078bd5f-67ef-482c-8e56-080149057648" msprop:DbColumnName="Mean" msprop:FriendlyName="Mean" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FactPatientMeasurement" />
+          <xs:field xpath="MeasurementID" />
+        </xs:unique>
+        <xs:unique name="dbo_DimTraumaPatient_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimTraumaPatient" />
+          <xs:field xpath="PatientID" />
+        </xs:unique>
+        <xs:unique name="dbo_DimTraumaDate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimTraumaDate" />
+          <xs:field xpath="DateKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimECGRaw_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimECGRaw" />
+          <xs:field xpath="RawECG_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_DimTraumaTime_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimTraumaTime" />
+          <xs:field xpath="TimeKey" />
+        </xs:unique>
+        <xs:unique name="dbo_DimICPRaw_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimICPRaw" />
+          <xs:field xpath="RawICP_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_DimABPRaw_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimABPRaw" />
+          <xs:field xpath="RawABP_ID" />
+        </xs:unique>
+        <xs:keyref name="FK_TimeTrauma" refer="dbo_DimTraumaTime_Constraint1">
+          <xs:selector xpath=".//dbo_FactPatientMeasurement" />
+          <xs:field xpath="MeasurementTime" />
+        </xs:keyref>
+        <xs:keyref name="FK_DateTrauma" refer="dbo_DimTraumaDate_Constraint1">
+          <xs:selector xpath=".//dbo_FactPatientMeasurement" />
+          <xs:field xpath="MeasurementDate" />
+        </xs:keyref>
+        <xs:keyref name="FK_TraumaPatient" refer="dbo_DimTraumaPatient_Constraint1">
+          <xs:selector xpath=".//dbo_FactPatientMeasurement" />
+          <xs:field xpath="Patient" />
+        </xs:keyref>
+        <xs:keyref name="FK_RawMeasurementABP" refer="dbo_DimABPRaw_Constraint1">
+          <xs:selector xpath=".//dbo_FactPatientMeasurement" />
+          <xs:field xpath="RawMeasurementABP" />
+        </xs:keyref>
+        <xs:keyref name="FK_RawMeasurementECG" refer="dbo_DimECGRaw_Constraint1">
+          <xs:selector xpath=".//dbo_FactPatientMeasurement" />
+          <xs:field xpath="RawMeasurementECG" />
+        </xs:keyref>
+        <xs:keyref name="FK_RawMeasurementICP" refer="dbo_DimICPRaw_Constraint1">
+          <xs:selector xpath=".//dbo_FactPatientMeasurement" />
+          <xs:field xpath="RawMeasurementICP" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Brain_x0020_Traumas_x0020_DW xmlns="" />
+  </Schema>
+</DataSourceView>
